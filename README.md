@@ -1,8 +1,5 @@
-# React + Vite
+# React State Preserve
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Here component maintains a separate message state for each contact, allowing to switch between contacts and see the message we typed earlier.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [preserving-and-resetting-state](https://react.dev/learn/preserving-and-resetting-state) You could lift the state up and hold the pending message for each recipient in the parent component. This way, when the child components get removed, it doesn’t matter, because it’s the parent that keeps the important information. This is the most common solution.
